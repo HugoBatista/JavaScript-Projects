@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="img">
+          <img src="">
+        </div>
+        <div class="form">
+          <input type="text" spellcheck="false" placeholder="Insira um texto ou URL" autocomplete="off">
+          <button>Gerar Codigo QR</button>
+        </div>
+      </div>
+
+      <style>
+        body{
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: #DDE6ED;
+}
+input{
+  padding: 8px 14px;
+  border-radius: 4px;
+  outline: none;
+  border: 2px solid #0a365ab0;
+  display: block;
+  font-size: 16px;
+  margin: 5px;
+}
+.container{
+  text-align: center;
+}
+.img{
+  margin: 10px;
+  height: 150px;
+}
+button{
+  background: #0b7eaca1;
+  padding: 10px 15px;
+  border: 1px solid #0a365ab0;
+  border-radius: 5px;
+  color: white;
+  display: block;
+  margin: 15px auto;
+  cursor: pointer;
+}
+button:hover{
+  opacity: .8;
+}
+      </style>
+    <script>
+        const image = document.querySelector("img"),
+        input = document.querySelector("input"),
+        button = document.querySelector("button"),
+        api = `https://api.qrserver.com/v1/`,
+        api2 = `create-qr-code/?size=150x150&data=`;
+
+        button.addEventListener("click", () => {
+        image.src = `${api}${api2}${input.value}`;
+        });
+
+
+    </script>
+</body>
+</html>
