@@ -4,7 +4,7 @@
 
   <p>
     <ul>
-        <!--  <li> <a href = ""> (nome do programa) </a> </li>-->
+        <!--  <li> <a href = ""> (oknome do programa) </a> </li>-->
         <a href="./Apps/QrCode/index.html">
         <h2>QrCode</h2>
         </a>
