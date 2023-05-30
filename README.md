@@ -8,7 +8,7 @@
         <a href="./Apps/QrCode/index.html">
         <h2>QrCode</h2>
         </a>
-      <a href="./Apps/PasswordGenerator/index.html">
+      <a href="./Apps/Password Generator/index.html">
         <h2>Password Generator</h2>
         </a>
 </html>
